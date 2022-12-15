@@ -57,7 +57,7 @@ open class BaseNotificationBanner: UIView {
         get {
             if let customBannerHeight = customBannerHeight {
                 return customBannerHeight
-            } } else if shouldAdjustForDynamicIsland() {
+            } else if shouldAdjustForDynamicIsland() {
                 return 104.0
             } else if shouldAdjustForNotchFeaturedIphone() {
                 return 88.0
