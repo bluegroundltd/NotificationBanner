@@ -188,6 +188,9 @@ open class GrowingNotificationBanner: BaseNotificationBanner {
     }
 
     override func spacerViewHeight() -> CGFloat {
+        if self.bannerPosition == .bottom {
+            return .zero
+        }
         return super.spacerViewHeight() + heightAdjustment
     }
 }
